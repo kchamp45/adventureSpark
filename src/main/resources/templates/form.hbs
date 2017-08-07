@@ -1,0 +1,27 @@
+{{#partial "title" }}
+ Okay, this is where you went!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+<h1>Fill out the form below!</h1>
+<form action='/journeyOutput'>
+ <div class="form-group">
+   <label for="user">Your name</label>
+   <input id="user" name="user" class="form-control" type="text">
+ </div>
+ <div class="form-group">
+   <label for="choiceA">Choose 1 or 2 to play</label>
+   <input id="choiceA" name="choiceA" class="form-control" type="text">
+ </div>
+ <div class="form-group">
+    <label for="choiceB">If you choose 1, then proceed and choose: 3 or 4</label>
+    <input id="choiceB" name="choiceB" class="form-control" type="text">
+  </div>
+ <button type="submit" class="btn">Go!</button>
+</form>
+<!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}
